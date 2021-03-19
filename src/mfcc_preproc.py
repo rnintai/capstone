@@ -25,7 +25,7 @@ def parse_audio_files(filenames):
     rows = len(filenames)
     print(rows)
     # feature는 각 파일 별 row(window) * 피처 의 2차원 행렬
-    # labels은 파일 별 카테고리 int 값d
+    # labels은 파일 별 카테고리 int 값
     features, labels = np.zeros((rows,40)), np.zeros((rows, 1))
     i = 0
     for fn in filenames:
