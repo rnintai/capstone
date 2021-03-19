@@ -10,7 +10,7 @@ sr = 8000
 hop_length = 512  # interval, 낮으면 깔끔
 n_fft = 1024      # ?? 높으면 깔끔
 
-x = librosa.load(file, sr = sr)[0]
+x = librosa.load(file, sr = 8000)[0]
 # print(sample_rate)
 # n_fft_duration = float(n_fft)/sample_rate
 # hop_length_duration = float(hop_length)/sample_rate
