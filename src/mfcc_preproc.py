@@ -16,29 +16,27 @@ num_files = 3
 # row 통일 안시킴
 def extract_feature(file_name):
     X = librosa.load(file_name, sr = sample_rate)[0]
-    S = librosa.feature.melspectrogram(X, sr=sample_rate, n_mels=128)
-    log_S = librosa.power_to_db(S, ref=np.max)
-    mfcc = librosa.feature.mfcc(S=log_S, n_mfcc=20)
-    # abs values & db to get magnitude
-    delta2_mfcc = librosa.feature.delta(mfcc, order=2)
-    return delta2_mfcc
+    mfccs = np.mean(librosa.feature.mfcc(y=X, sr=sample_rate, n_mfcc=n_mfcc).T,axis=0)
+    return mfccs
 
 #데이터 가공
 #행렬로 변환
 def parse_audio_files(filenames):
     rows = len(filenames)
+    print(rows)
     # feature는 각 파일 별 row(window) * 피처 의 2차원 행렬
-    # labels은 파일 별 카테고리 int 값
-    features, labels = np.zeros((rows,num_files)), np.zeros((rows, 1))
+    # labels은 파일 별 카테고리 int 값d
+    features, labels = np.zeros((rows,40)), np.zeros((rows, 1))
     i = 0
     for fn in filenames:
-        # try:
+        try:
             mfccs = extract_feature(fn)
-            print(features.shape)
+            # ext_features = np.hstack([mfccs])
+            # print(ext_features.shape)
             y_col = int(fn.split('-')[1])
-        # except:
-            # print("error : "+fn)d
-        # else:
+        except:
+            print("error : "+fn)
+        else:
             features[i] = mfccs
             labels[i] = y_col
             print(y_col)
