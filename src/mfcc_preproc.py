@@ -37,7 +37,7 @@ def parse_audio_files(filenames):
             print(features.shape)
             y_col = int(fn.split('-')[1])
         # except:
-            # print("error : "+fn)
+            # print("error : "+fn)d
         # else:
             features[i] = mfccs
             labels[i] = y_col
