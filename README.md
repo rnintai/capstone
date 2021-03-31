@@ -8,6 +8,7 @@
   > sr = 16000, n_mfcc= 100, n_fft = 400, hop_length = 160  
   > output list은 (100,40)을 갖게 되는데, 조금 짧은 음원 파일의 경우 후위에 0의 값을 갖는  
   > padding을 주었다.  
+  > **1당 0.01125초라고 함. 400을 넣어서라던지(4.5초) 해서 초를 늘리자.**
   > 
   > label을 one hot encoding 벡터로 정리  
   > modeling을 하기 위해 4D Array로 변환.  
