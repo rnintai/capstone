@@ -20,6 +20,7 @@
 2. 모델 구성  
   > - 모델 구성  
   > ![image](https://user-images.githubusercontent.com/65759076/113010845-207aed80-91b4-11eb-83b8-8c38c84b23d9.png)  
+  > ![image](https://user-images.githubusercontent.com/65759076/113115676-a3995380-9247-11eb-9969-c116f9b964ad.png)  
   > 
   > - 진행 상황  
   > ![image](https://user-images.githubusercontent.com/65759076/113011272-98491800-91b4-11eb-813f-30896924f6b9.png)
