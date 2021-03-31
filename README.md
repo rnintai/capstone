@@ -11,8 +11,7 @@
   > **1당 0.01125초라고 함. 400을 넣어서라던지(4.5초) 해서 초를 늘리자.**
   > 
   > label을 one hot encoding 벡터로 정리  
-  > ![image](https://user-images.githubusercontent.com/65759076/113110706-58307680-9242-11eb-9f00-bb2abb4fdf59.png)  
-  > 
+  > ![image](https://user-images.githubusercontent.com/65759076/113120169-43f17700-924c-11eb-965a-954b12bb834d.png)
   > modeling을 하기 위해 4D Array로 변환.  
   > 
   > ![image](https://user-images.githubusercontent.com/65759076/113011396-b9aa0400-91b4-11eb-8c48-1eab30a9a39f.png)  
