@@ -9,6 +9,8 @@
   > output list은 (100,40)을 갖게 되는데, 조금 짧은 음원 파일의 경우 후위에 0의 값을 갖는  
   > padding을 주었다.  
   > **1당 0.01125초라고 함. 400을 넣어서라던지(4.5초) 해서 초를 늘리자.**
+  > MixMaxScale
+  > ![image](https://user-images.githubusercontent.com/65759076/113121745-e8c08400-924d-11eb-9220-2413e9659a7e.png)
   > 
   > label을 one hot encoding 벡터로 정리  
   > ![image](https://user-images.githubusercontent.com/65759076/113120169-43f17700-924c-11eb-965a-954b12bb834d.png)
