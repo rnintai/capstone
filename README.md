@@ -26,6 +26,7 @@
 
 3. 결과
   > - 경적 소리 input(파일 이름에 -1-이 포함.)  
+  > ![image](https://user-images.githubusercontent.com/65759076/113016506-83bb4e80-91b9-11eb-8d1a-dfb460099f3c.png)
   > ![image](https://user-images.githubusercontent.com/65759076/113087084-de869180-921d-11eb-86e2-a86e3178d090.png)  
   > 
   > - 사이렌 소리 input(파일 이름에 -8-이 포함.)  
